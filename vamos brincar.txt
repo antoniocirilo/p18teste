@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Doquinha pancadão
+=======
+Galera do mal!!!!!!
+>>>>>>> 846cdffaab196260a00cabf5719d6afb08c3189f
