@@ -1,8 +1,20 @@
 <<<<<<< HEAD
+HEAD
+nbfasjkdbfkjbdsaf
+Galera do mal!!!!!!
+=======
+<<<<<<< HEAD
 Doquinha pancadão
 =======
 Galera do mal!!!!!!
 >>>>>>> 846cdffaab196260a00cabf5719d6afb08c3189f
+<<<<<<< HEAD
 
 
 Hominho
+=======
+>>>>>>> 73396bbf674387755f3cf667a16c8762dd4408af
+>>>>>>> 3ba7267db33dc0d2a790aef01c85f538ca421382
+
+
+hominho
