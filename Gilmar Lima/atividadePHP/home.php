@@ -142,11 +142,5 @@ echo "<br>";
 
 ?>
 
-<!--
-	<form method='post' action="destino.php">
-		<p>Nome: <input type="text" name="nome" /></p>
-		<input type="submit" value="Enviar" />
-	</form>
--->
 </body>
 </html>
