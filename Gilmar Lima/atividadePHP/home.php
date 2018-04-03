@@ -30,6 +30,8 @@
 <a href="?att1"> Atividade 1 </a><br>
 <a href="?att2"> Atividade 2 </a><br>
 <a href="?att3"> Atividade 3 </a><br>
+<a href="?att4"> Atividade 4 </a><br>
+<a href="?att5"> Atividade 5 </a><br>
 <a href="?att6"> Atividade 6 </a><br>
 
 <?php
@@ -170,17 +172,39 @@ echo "<br>";
 	{		
 		
 	}
+	if(isset($_GET['att4']))
+	{		
+		echo 
+			"	
+				<form method='post' action='outras.php'>
+					<p>Digite um numero inteiro qualquer: <input type='text' name='num' /></p>
+					<input type='submit' value='Enviar' />
+				</form>
+			";
+	}
+	if(isset($_GET['att5']))
+	{		
+		echo 
+			"	
+				<form method='post' action='outras.php'>
+					<p>Digite um numero A: <input type='text' name='num1' /></p>
+					<p>Digite um numero B: <input type='text' name='num2' /></p>
+					<input type='submit' value='Enviar' />
+				</form>
+			";
+	}
 	if(isset($_GET['att6']))
 	{		
 		echo 
 			"	
 				<form method='post' action='outras.php'>
-					<p>Digite um numero A: <input type='text' name='numA' /></p>
-					<p>Digite um numero B: <input type='text' name='numB' /></p>
+					<p>Digite um numero inteiro A: <input type='text' name='numA' /></p>
+					<p>Digite um numero inteiro B: <input type='text' name='numB' /></p>
 					<input type='submit' value='Enviar' />
 				</form>
 			";
 	}
+
 		
 	
 

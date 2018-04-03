@@ -54,6 +54,37 @@ echo '<a href="home.php">Voltar</a><br><br>';
 	}
 	
 	//ATIVIDADE DE REPETIDORES
+	
+	//atividade 4
+	if (isset($_POST['num']))
+	{
+		$numFinal = $_POST['num']+20;
+			for($i=$_POST['num']; $i<=$numFinal; $i++)
+				echo "$i ";
+	}
+	//atividade 5
+	if ((isset($_POST['num1'])) and (isset($_POST['num2']))) 
+	{
+		$soma = 0;
+		if(($_POST['num1'] < $_POST['num2'] ))
+		{
+			for($i=$_POST['num1']; $i<=$_POST['num2']; $i++)
+				$soma = $soma + $i;
+			
+			echo "$soma";
+		}
+		else
+		if(($_POST['num2'] < $_POST['num1'] ))
+		{
+			for($i=$_POST['num2']; $i<=$_POST['num1']; $i++)
+				$soma = $soma + $i;
+			
+			echo "$soma";
+		}
+		else
+			echo "Os numeros digitados são iguais";	
+	}
+	//atividade 6
 	if ((isset($_POST['numA'])) and (isset($_POST['numB']))) 
 	{
 		if(($_POST['numA'] < $_POST['numB'] ))
@@ -71,6 +102,7 @@ echo '<a href="home.php">Voltar</a><br><br>';
 			echo "Os numeros digitados são iguais";	
 	
 	}
+
 	
 	
 ?>
