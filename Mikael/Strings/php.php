@@ -7,8 +7,8 @@
   <body>
 
     <?php
-    $strings = $_GET["teste"];
-    
+    $nv = $_POST["teste"];
+    echo strrev("$nv");
     ?>
 
   </body>
