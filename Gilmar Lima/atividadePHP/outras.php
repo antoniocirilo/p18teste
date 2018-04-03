@@ -102,7 +102,17 @@ echo '<a href="home.php">Voltar</a><br><br>';
 			echo "Os numeros digitados são iguais";	
 	
 	}
-
+	
+		//ATIVIDADE DE MANIPULAÇÃO DE STRINGS
+		//atividade 1
+	if (isset($_POST['nome'])) 
+	{
+		$nome = $_POST['nome'];
+		$tamanho = strlen($nome);
+		
+		for($i=$tamanho ; $i>=1 ; $i--)
+			echo(substr($nome, $i-1,1));
+	}
 	
 	
 ?>

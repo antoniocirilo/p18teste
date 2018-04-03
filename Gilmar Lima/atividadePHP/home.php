@@ -3,12 +3,12 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Primeira Pagina PHP</title>
+	<title>Primeira Página PHP</title>
 	</head>
 <body>
 
-<p><h2>Gilmar de Lima</h2><p>
-<p><h3>Selecione o exercicio desejado:</h3><p><br>
+<p><h2>ALUNO: Gilmar de Lima</h2><p>
+<p><h3>Selecione o exercicio desejado:</h3><p>
 
 <a href="home.php"> home </a><br>
 <a href="?at1"> Atividade 1 </a><br>
@@ -26,13 +26,16 @@
 <a href="?at13"> Atividade 13 </a><br>
 <a href="?at14"> Atividade 14 </a><br>
 
-<p><h3>atividade de repetidores:</h3><p><br>
+<p><h3>atividade de repetidores:</h3><p>
 <a href="?att1"> Atividade 1 </a><br>
 <a href="?att2"> Atividade 2 </a><br>
 <a href="?att3"> Atividade 3 </a><br>
 <a href="?att4"> Atividade 4 </a><br>
 <a href="?att5"> Atividade 5 </a><br>
 <a href="?att6"> Atividade 6 </a><br>
+
+<p><h3>atividade de manipulação de strings:</h3><p>
+<a href="?ativ1"> Atividade 1 </a><br>
 
 <?php
 echo "<br>";
@@ -203,6 +206,21 @@ echo "<br>";
 					<input type='submit' value='Enviar' />
 				</form>
 			";
+	}
+	
+	
+	// MANIPULAÇÃO DE STRINGS
+	if(isset($_GET['ativ1']))
+	{
+		echo 
+			"	
+				<form method='post' action='outras.php'>
+					<p>Digite seu nome: <input type='text' name='nome' /></p>
+					<input type='submit' value='Enviar' />
+				</form>
+			";
+
+		
 	}
 
 		
