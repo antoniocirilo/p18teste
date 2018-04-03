@@ -53,5 +53,24 @@ echo '<a href="home.php">Voltar</a><br><br>';
 		echo "<b>False</b>"."<br>Não é divisível por 3";
 	}
 	
+	//ATIVIDADE DE REPETIDORES
+	if ((isset($_POST['numA'])) and (isset($_POST['numB']))) 
+	{
+		if(($_POST['numA'] < $_POST['numB'] ))
+		{
+			for($i=$_POST['numA']; $i<=$_POST['numB']; $i++)
+				echo "$i ";
+		}
+		else
+		if(($_POST['numB'] < $_POST['numA'] ))
+		{
+			for($i=$_POST['numA']; $i>=$_POST['numB']; $i--)
+				echo "$i ";
+		}
+		else
+			echo "Os numeros digitados são iguais";	
+	
+	}
+	
 	
 ?>

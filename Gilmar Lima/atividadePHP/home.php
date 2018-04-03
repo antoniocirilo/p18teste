@@ -26,6 +26,12 @@
 <a href="?at13"> Atividade 13 </a><br>
 <a href="?at14"> Atividade 14 </a><br>
 
+<p><h3>atividade de repetidores:</h3><p><br>
+<a href="?att1"> Atividade 1 </a><br>
+<a href="?att2"> Atividade 2 </a><br>
+<a href="?att3"> Atividade 3 </a><br>
+<a href="?att6"> Atividade 6 </a><br>
+
 <?php
 echo "<br>";
 	if(isset($_GET['at1']))
@@ -106,6 +112,7 @@ echo "<br>";
 		echo "<a href='atividade11.php?at11_8'> Atividade 11.8</a><br>";
 		echo "<a href='atividade11.php?at11_9'> Atividade 11.9</a><br>";
 		echo "<a href='atividade11.php?at11_10'> Atividade 11.10</a><br>";
+		
 	}
 	if(isset($_GET['at12']))
 	{
@@ -132,7 +139,44 @@ echo "<br>";
 		echo 
 			"	
 				<form method='post' action='outras.php'>
-					<p>Digite um numero inteiro qualquer: <input type='text' name='numero15' /></p>
+					<p>Digite um numero inteiro: <input type='text' name='numero15' /></p>
+					<input type='submit' value='Enviar' />
+				</form>
+			";
+	}
+	if(isset($_GET['at15']))
+	{
+		echo 
+			"	
+				<form method='post' action='outras.php'>
+					<p>Digite um numero inteiro: <input type='text' name='numero16' /></p>
+					<input type='submit' value='Enviar' />
+				</form>
+			";
+	}
+	
+	// ATIVIDADE DE REPETIDORES
+	if(isset($_GET['att1']))
+	{
+		for($i=1 ; $i<51 ; $i++)
+			echo "$i ";
+	}
+	if(isset($_GET['att2']))
+	{		
+		for($i=50 ; $i>0 ; $i--)
+			echo "$i ";
+	}
+	if(isset($_GET['att3']))
+	{		
+		
+	}
+	if(isset($_GET['att6']))
+	{		
+		echo 
+			"	
+				<form method='post' action='outras.php'>
+					<p>Digite um numero A: <input type='text' name='numA' /></p>
+					<p>Digite um numero B: <input type='text' name='numB' /></p>
 					<input type='submit' value='Enviar' />
 				</form>
 			";
